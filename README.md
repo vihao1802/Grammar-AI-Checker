@@ -1,7 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
+<h1 align="center">Grammar AI Checker</h1>
+<p align="center">
+  <a href="https://github.com/vihao1802/Website-ClassIn/blob/main/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/vihao1802/Website-ClassIn/watchers">
+    <img alt="GitHub" src="https://img.shields.io/github/watchers/vihao1802/Website-Classin" target="_blank" />
+  </a>
+</p>
+<image src="https://github.com/vihao1802/Grammar-AI-Checker/assets/108573121/1c3446f5-a59c-4c5d-9c9d-ffab8fd4a19c"/>
 First, run the development server:
 
 ```bash
