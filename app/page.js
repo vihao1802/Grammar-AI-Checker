@@ -113,9 +113,7 @@ export default function Home() {
                   className="inline-flex justify-center text-base items-center  text-gray-500 rounded cursor-pointer hover:text-gray-900 "
                   onClick={() => {
                     navigator.clipboard.writeText(
-                      textResult
-                        .split("Here is the corrected text:")[1]
-                        .replaceAll("*", "")
+                      textResult.replaceAll("*", "")
                     );
                   }}
                 >
