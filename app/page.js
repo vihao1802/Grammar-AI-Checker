@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="flex justify-center italic mt-6">
-      <div className="text-center p-3 w-full max-w-[1100px] text-slate-900">
+      <div className="text-center md:p-3 w-full max-w-[1100px] text-slate-900">
         <header className="mb-7">
           <h1 className="font-bold text-2xl">Grammer AI Checker</h1>
           <blockquote className="text-lg font-semibold text-center my-6">
@@ -39,7 +39,7 @@ export default function Home() {
         </header>
         <div className=" text-left">
           <div className="mb-10 shadow-lg md:p-3 p-0 rounded-md ">
-            <div className="flex justify-between items-center mb-3">
+            <div className="flex justify-between items-center mb-3 px-3 md:px-0">
               <p className="font-medium text-xl">Your text:</p>
               <div className="flex gap-2">
                 <button
@@ -65,13 +65,13 @@ export default function Home() {
             <div className="border-b pb-2">
               <textarea
                 placeholder="Enter your sentence here"
-                className="w-full border resize-none h-56 border-gray-400  px-3 py-2 "
+                className="w-full border-none md:border resize-none h-56 border-gray-400  px-3 py-2 "
                 value={text}
                 onChange={(e) => setText(e.target.value)}
               />
             </div>
 
-            <div className="flex items-center justify-between md:p-0 p-3 mt-4">
+            <div className="flex items-center justify-between flex-col gap-2 sm:flex-row md:p-0 p-3 mt-4">
               <div className="font-medium">
                 <span>Words:</span>
                 <span className="text-blue-500">
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mb-10 shadow-lg md:p-3 p-0 rounded-md">
-            <div className="flex justify-between items-center mb-3">
+            <div className="flex justify-between items-center mb-3 px-3 md:px-0">
               <p className="mb-2 font-medium text-xl">Result:</p>
               <div className="flex gap-2">
                 <button
@@ -122,7 +122,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="w-full border-b pb-2">
+            <div className="w-full border-b pb-2 px-3 md:px-0">
               <div className="w-full text-black">
                 {loading ? (
                   <PropagateLoader
@@ -138,7 +138,7 @@ export default function Home() {
                 )}
               </div>
             </div>
-            <div className="flex items-center justify-between md:p-0  p-3 mt-4">
+            <div className="flex items-center justify-between flex-col gap-2 sm:flex-row md:p-0 p-3 mt-4">
               <div className="font-medium">
                 <span>Words:</span>
                 <span className="text-blue-500">
